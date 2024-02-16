@@ -1,0 +1,19 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-DU0CUKCD 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x40803638: i2c_ll_get_intr_mask at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/i2c_ll.h:284
+ (inlined by) s_slave_isr_handle_default at /Users/naichenzhao/esp/esp-idf/components/esp_driver_i2c/i2c_slave.c:155
+[0m
+[0;33m0x40800cae: shared_intr_isr at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/intr_alloc.c:450
+[0m
+[0;33m0x40807618: SysTickIsrHandler at /Users/naichenzhao/esp/esp-idf/components/freertos/port_systick.c:141
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0m

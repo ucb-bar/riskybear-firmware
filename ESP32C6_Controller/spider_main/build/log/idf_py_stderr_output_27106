@@ -1,0 +1,43 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-DU0CUKCC 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42007fca: init_single_motor at /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/main/motor.c:56 (discriminator 1)
+[0m
+[0;33m0x4080503b: _esp_error_check_failed at /Users/naichenzhao/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x408007c0: panic_abort at /Users/naichenzhao/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40805046: __ubsan_include at /Users/naichenzhao/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40806198: uxInitialiseStackFrame at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:358
+ (inlined by) pxPortInitialiseStack at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:425
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m0x42007fca: init_single_motor at /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/main/motor.c:56 (discriminator 1)
+[0m
+[0;33m0x4080503b: _esp_error_check_failed at /Users/naichenzhao/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x408007c0: panic_abort at /Users/naichenzhao/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40805046: __ubsan_include at /Users/naichenzhao/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40806198: uxInitialiseStackFrame at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:358
+ (inlined by) pxPortInitialiseStack at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:425
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0m

@@ -1,0 +1,57 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader/esp-idf/esptool_py && /Users/naichenzhao/.espressif/python_env/idf5.3_py3.11_env/bin/python /Users/naichenzhao/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader/bootloader.bin
+Bootloader binary size 0x5430 bytes. 0x2bd0 bytes (34%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/motor.c.obj
+[4/10] Completed 'bootloader'
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable app-template.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32c6 image...
+Merged 2 ELF sections
+Successfully created esp32c6 image.
+Generated /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/app-template.bin
+[9/10] cd /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esptool_py && /Users/naichenzhao/.espressif/python_env/idf5.3_py3.11_env/bin/python /Users/naichenzhao/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/partition_table/partition-table.bin /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/app-template.bin
+app-template.bin binary size 0x2bec0 bytes. Smallest app partition is 0x100000 bytes. 0xd4140 bytes (83%) free.
+[9/10] cd /Users/naichenzhao/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.28.1/bin/cmake -D IDF_PATH=/Users/naichenzhao/esp/esp-idf -D "SERIAL_TOOL=/Users/naichenzhao/.espressif/python_env/idf5.3_py3.11_env/bin/python;;/Users/naichenzhao/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build -P /Users/naichenzhao/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c6 -p /dev/cu.usbserial-DU0CUKCC -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 app-template.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/cu.usbserial-DU0CUKCC
+Connecting....
+Chip is ESP32-C6 (QFN40) (revision v0.0)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: 40:4c:ca:ff:fe:42:22:3c
+BASE MAC: 40:4c:ca:42:22:3c
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0003bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21552 bytes to 13000...
+Writing at 0x00000000... (100 %)
+Wrote 21552 bytes (13000 compressed) at 0x00000000 in 0.6 seconds (effective 307.8 kbit/s)...
+Hash of data verified.
+Compressed 179904 bytes to 91395...
+Writing at 0x00010000... (16 %)
+Writing at 0x0001b18d... (33 %)
+Writing at 0x00021858... (50 %)
+Writing at 0x00028ad3... (66 %)
+Writing at 0x00030d11... (83 %)
+Writing at 0x00037b48... (100 %)
+Wrote 179904 bytes (91395 compressed) at 0x00010000 in 2.4 seconds (effective 591.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 508.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

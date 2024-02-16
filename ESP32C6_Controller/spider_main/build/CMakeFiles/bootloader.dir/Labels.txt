@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/CMakeFiles/bootloader
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/CMakeFiles/bootloader.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/CMakeFiles/bootloader-complete.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
