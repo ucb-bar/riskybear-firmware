@@ -1,4 +1,4 @@
-/* * Data converted from /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/naichenzhao/Desktop/SLICE/riskybear/firmware/ESP32C6_Controller/spider_main/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

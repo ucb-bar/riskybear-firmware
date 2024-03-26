@@ -38,8 +38,8 @@ void i2c_init(void) {
     ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_mst_config_1, &bus_handle));
     ESP_ERROR_CHECK(i2c_master_probe(bus_handle, IO_PORT, -1));
     printf("IO Expander Found!\n");
-    ESP_ERROR_CHECK(i2c_master_probe(bus_handle, ESP_PORT, -1));
-    printf("ESP32 Found!\n");
+    // ESP_ERROR_CHECK(i2c_master_probe(bus_handle, ESP_PORT, -1));
+    // printf("ESP32 Found!\n");
 
     i2c_device_config_t iodev_cfg = {
         .dev_addr_length = I2C_ADDR_BIT_LEN_7,
@@ -48,18 +48,18 @@ void i2c_init(void) {
     };
     ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &iodev_cfg, &io_handle));
 
-    i2c_device_config_t espdev_cfg = {
-        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
-        .device_address = ESP_PORT,
-        .scl_speed_hz = 100000,
-    };
-    ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &espdev_cfg, &esp_handle));
+    // i2c_device_config_t espdev_cfg = {
+    //     .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+    //     .device_address = ESP_PORT,
+    //     .scl_speed_hz = 100000,
+    // };
+    // ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &espdev_cfg, &esp_handle));
 
 
     printf("I2C Setup done\n");
 }
 
-uint8_t i2c_read_io() {
+int i2c_read_io() {
     uint8_t buf[20] = {0x00};
     uint8_t buffer[2];
 
@@ -67,6 +67,7 @@ uint8_t i2c_read_io() {
     return buffer[0];
 }
 
-void esp_WR_RD(uint8_t *motor_pos, uint8_t *encoder_pos) {
+void esp_WR_RD(int *motor_pos, int *encoder_pos)
+{
     ESP_ERROR_CHECK(i2c_master_transmit_receive(esp_handle, motor_pos, sizeof(motor_pos), encoder_pos, 4, -1));
 }

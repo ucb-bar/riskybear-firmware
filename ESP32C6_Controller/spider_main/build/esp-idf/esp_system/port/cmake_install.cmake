@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_system/port/soc/esp32c6/cmake_install.cmake")
+  include("/Users/naichenzhao/Desktop/SLICE/riskybear/firmware/ESP32C6_Controller/spider_main/build/esp-idf/esp_system/port/soc/esp32c6/cmake_install.cmake")
 endif()
 

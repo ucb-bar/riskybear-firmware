@@ -1678,7 +1678,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/local/Cellar/cmake/3.28.1/bin/cmake --regenerate-during-build -S/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main -B/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build
+  command = /usr/local/Cellar/cmake/3.28.1/bin/cmake --regenerate-during-build -S/Users/naichenzhao/Desktop/SLICE/riskybear/firmware/ESP32C6_Controller/spider_main -B/Users/naichenzhao/Desktop/SLICE/riskybear/firmware/ESP32C6_Controller/spider_main/build
   description = Re-running CMake...
   generator = 1
 

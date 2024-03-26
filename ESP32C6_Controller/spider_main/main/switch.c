@@ -21,6 +21,10 @@ void read_switches() {
     vals = i2c_read_io();
 }
 
+uint8_t get_switches() {
+    return vals;
+}
+
 uint8_t read_switch(int num) {
     return (0x01) & (vals >> SW_REMAP[num]);
 }

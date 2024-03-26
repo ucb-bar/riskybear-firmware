@@ -1,4 +1,4 @@
-# Install script for directory: /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/components/rotary_encoder
+# Install script for directory: /Users/naichenzhao/Desktop/SLICE/riskybear/firmware/ESP32C6_Controller/spider_main/components/rotary_encoder
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

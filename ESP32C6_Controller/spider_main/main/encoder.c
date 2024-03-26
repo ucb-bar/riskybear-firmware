@@ -14,8 +14,8 @@
 #define FLIP_DIRECTION false
 
 rotary_encoder_info_t ENCODERS[4] = {{0}, {0}, {0}, {0}};
-int ENC_B[4] = {GPIO_NUM_21, GPIO_NUM_22, GPIO_NUM_11, GPIO_NUM_19};
-int ENC_A[4] = {GPIO_NUM_20, GPIO_NUM_23, GPIO_NUM_15, GPIO_NUM_18};
+int ENC_B[4] = {GPIO_NUM_22, GPIO_NUM_21, GPIO_NUM_15, GPIO_NUM_19};
+int ENC_A[4] = {GPIO_NUM_23, GPIO_NUM_20, GPIO_NUM_11, GPIO_NUM_18};
 
 
 // int ENC_A[4] = {0, 0, 0, 0};
@@ -44,7 +44,7 @@ void reset_encoder(int num) {
     rotary_encoder_reset(&ENCODERS[num]);
 }
 
-void get_counts(uint8_t* enc_pos) {
+void get_counts(int* enc_pos) {
     enc_pos[0] = get_angle(0);
     enc_pos[1] = get_angle(1);
     enc_pos[2] = get_angle(2);
@@ -58,10 +58,10 @@ int get_count(int num) {
     return state.position;
 }
 
-uint8_t get_angle(int num) {
+int get_angle(int num) {
     rotary_encoder_state_t state = {0};
     ESP_ERROR_CHECK(rotary_encoder_get_state(&ENCODERS[num], &state));
 
-    return (state.position * 360) / (6 * 150);
+    return (state.position * 360) / (6 * 250);
 
 }
