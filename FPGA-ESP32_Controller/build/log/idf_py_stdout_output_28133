@@ -1,0 +1,148 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42004d54
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xddc
+load:0x4086e610,len:0x2dfc
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.3-dev-1043-g8c9e29898f-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time May 19 2024 02:06:31[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (28) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=0afd0h ( 45008) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001aff8 vaddr=40800000 size=05020h ( 20512) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=15d3ch ( 89404) map[0m
+[0;32mI (128) esp_image: segment 3: paddr=00035d64 vaddr=40805020 size=069ech ( 27116) load[0m
+[0;32mI (136) esp_image: segment 4: paddr=0003c758 vaddr=4080ba10 size=0142ch (  5164) load[0m
+[0;32mI (140) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (141) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Unicore app[0m
+[0;33mW (166) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) cpu_start: Application information:[0m
+[0;32mI (175) cpu_start: Project name:     app-template[0m
+[0;32mI (181) cpu_start: App version:      8f30c1e[0m
+[0;32mI (186) cpu_start: Compile time:     May 19 2024 02:06:17[0m
+[0;32mI (192) cpu_start: ELF file SHA256:  68cb9e279...[0m
+[0;32mI (197) cpu_start: ESP-IDF:          v5.3-dev-1043-g8c9e29898f-dirty[0m
+[0;32mI (204) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (209) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (214) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 4080DDF0 len 0006E820 (442 KiB): RAM[0m
+[0;32mI (232) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (238) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (245) spi_flash: detected chip: generic[0m
+[0;32mI (249) spi_flash: flash io: dio[0m
+[0;33mW (253) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (266) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (273) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (280) coexist: coex firmware version: c02915e[0m
+[0;32mI (285) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+READY---
+[START INIT]
+[0;32mI (1291) gpio: GPIO[16]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1291) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+IO Expander Found!
+I2C Setup done
+Start UART TSI Setup
+UART TSI Setup done
+[START HOME]
+Homing motor [0]
+Finished Homing: [0]
+Homing motor [1]
+Finished Homing: [1]
+Homing motor [2]
+Finished Homing: [2]
+Homing motor [3]
+Finished Homing: [3]
+Homing motor [4]
+Finished Homing: [4]
+Homing motor [5]
+Finished Homing: [5]
+Homing motor [6]
+Finished Homing: [6]
+Homing motor [7]
+Finished Homing: [7]
+[START MAIN]
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803588
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xddc
+load:0x4086e610,len:0x2dfc
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.3-dev-1043-g8c9e29898f-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time May 19 2024 02:06:31[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (28) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=0afd0h ( 45008) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001aff8 vaddr=40800000 size=05020h ( 20512) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=15d3ch ( 89404) map[0m
+[0;32mI (128) esp_image: segment 3: paddr=00035d64 vaddr=40805020 size=069ech ( 27116) load[0m
+[0;32mI (136) esp_image: segment 4: paddr=0003c758 vaddr=4080ba10 size=0142ch (  5164) load[0m
+[0;32mI (140) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (141) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Unicore app[0m
+[0;33mW (166) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) cpu_start: Application information:[0m
+[0;32mI (175) cpu_start: Project name:     app-template[0m
+[0;32mI (181) cpu_start: App version:      8f30c1e[0m
+[0;32mI (186) cpu_start: Compile time:     May 19 2024 02:06:17[0m
+[0;32mI (192) cpu_start: ELF file SHA256:  68cb9e279...[0m
+[0;32mI (197) cpu_start: ESP-IDF:          v5.3-dev-1043-g8c9e29898f-dirty[0m
+[0;32mI (204) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (209) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (214) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 4080DDF0 len 0006E820 (442 KiB): RAM[0m
+[0;32mI (232) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (238) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (245) spi_flash: detected chip: generic[0m
+[0;32mI (249) spi_flash: flash io: dio[0m
+[0;33mW (253) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (266) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (273) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (280) coexist: coex firmware version: c02915e[0m
+[0;32mI (285) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+READY---
+[START INIT]
+[0;32mI (1291) gpio: GPIO[16]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1291) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+IO Expander Found!
+I2C Setup done
+Start UART TSI Setup
+UART TSI Setup done
+[START HOME]
+Homing motor [0]

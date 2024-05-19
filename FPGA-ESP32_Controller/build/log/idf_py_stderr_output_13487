@@ -1,0 +1,6 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbmodem14401 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42004d48: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0m
