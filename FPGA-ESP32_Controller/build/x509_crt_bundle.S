@@ -1,4 +1,4 @@
-/* * Data converted from /Users/naichenzhao/Desktop/SLICE/riskybear/firmware/FPGA_ESP32_Controller/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/naichenzhao/Desktop/SLICE/riskybear/firmware/FPGA-ESP32_Controller/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

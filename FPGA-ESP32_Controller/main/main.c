@@ -49,28 +49,9 @@ void app_main(void) {
   // +------------------------------------------------+
   printf("[START MAIN]\n");
   while (1) {
-    // for (int i=0; i<10; i++) {
-    //   print_encoders();
-    //   vTaskDelay(300 / portTICK_PERIOD_MS);
-    // }
-
-    // for (int i = 0; i < 8; i++){
-    //   motor_positions[i] = 450;
-    // }
-    // passthrough_positions();
-
-    // for (int i=0; i<10; i++) {
-    //   print_encoders();
-    //   vTaskDelay(300 / portTICK_PERIOD_MS);
-    // }
-
-    // for (int i = 0; i < 8; i++){
-    //   motor_positions[i] = 0;
-    // }
-    // passthrough_positions();
-
     step();
-    vTaskDelay(150 / portTICK_PERIOD_MS);
+    print_encoders();
+    vTaskDelay(300 / portTICK_PERIOD_MS);
   }
 }
 

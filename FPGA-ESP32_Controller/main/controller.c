@@ -13,7 +13,7 @@
 #include "controller.h"
 
 #define F_LOW 100
-#define F_HIGH 900
+#define F_HIGH 950
 
 #define F_FRONT 20
 #define F_BACK 800
@@ -35,7 +35,7 @@ void step() {
     for(int i = 0; i < 8; i++) {
       set_motor_pos(i, step_fwd[t][i]);
     }
-    vTaskDelay(150 / portTICK_PERIOD_MS);
+    vTaskDelay(300 / portTICK_PERIOD_MS);
   }
 
 }

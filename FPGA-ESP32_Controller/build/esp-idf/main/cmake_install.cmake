@@ -1,4 +1,4 @@
-# Install script for directory: /Users/naichenzhao/Desktop/SLICE/riskybear/firmware/FPGA_ESP32_Controller/main
+# Install script for directory: /Users/naichenzhao/Desktop/SLICE/riskybear/firmware/FPGA-ESP32_Controller/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
